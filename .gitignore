@@ -1,0 +1,8 @@
+
+# ==== Large research data (do not upload) ====
+static/data/db/*.db
+static/data/**/*.json
+upload/*.xlsx
+upload/*.xls
+*.db
+*.json
