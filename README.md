@@ -6,8 +6,6 @@ The platform integrates literature knowledge management, large language model (L
 
 This repository provides the **core source code and deployment logic** of the platform, with a strong emphasis on **environment configuration, executability, and reproducibility**.
 
-> ⚠️ Large raw datasets, databases, and experimental files are **not included** in this repository and must be prepared locally by users.
-
 ---
 
 ## 1. Software Scope
