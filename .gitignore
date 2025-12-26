@@ -1,8 +1,14 @@
-
-# ==== Large research data (do not upload) ====
+# --- Large research data (do not commit to GitHub) ---
 static/data/db/*.db
 static/data/**/*.json
 upload/*.xlsx
 upload/*.xls
-*.db
-*.json
+upload/*.db
+upload/*.json
+
+# keep directory placeholders
+!static/data/.gitkeep
+!upload/.gitkeep
+!data/manifest.json
+!data/README.md
+
