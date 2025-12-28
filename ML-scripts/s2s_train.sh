@@ -1,4 +1,3 @@
-# 重新 prepare 不需要（pairs.json 已有就行）。直接训练：
 python s2s_gnn_dirpair.py train \
   --save-dir runs/s2s_vac \
   --cutoff 6.0 \

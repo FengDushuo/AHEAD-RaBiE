@@ -68,7 +68,7 @@ $('input[name="login"],input[name="pwd"]').keyup(function () {
 var open = 0;
 layui.use('layer', function () {
 	if (nowtitle == "登录界面" && showHelp == 1 ) {
-		var msgalert = '测试账号:' + truelogin + '<br/> 帐号密码:' + truepwd;
+		var msgalert = 'username:' + truelogin + '<br/> password:' + truepwd;
 		var index = layer.alert(msgalert, { icon: 6, time: 4000, offset: 't', closeBtn: 0, title: '友情提示', btn: [], anim: 2, shade: 0 });
 		layer.style(index, {
 			color: '#777'
@@ -141,7 +141,7 @@ layui.use('layer', function () {
 								//登录成功
 								$('.login div').fadeOut(100);
 								$('.success').fadeIn(1000);
-								$('.success').html("登陆成功<br /><br />欢迎回来");
+								$('.success').html("login success<br /><br />welcome");
 								$('.success').fadeOut(3000);
 								function to_user() {
 									window.location.href = "/user";
@@ -461,7 +461,7 @@ if (ajaxmockjax == 1) {
 		url: 'Ajax/Login',
 		status: 200,
 		responseTime: 50,
-		responseText: { "Status": "ok", "Text": "登陆成功<br /><br />欢迎回来" }
+		responseText: { "Status": "ok", "Text": "login success<br /><br />welcome" }
 	});
 	$.mockjax({
 		url: 'Ajax/LoginFalse',

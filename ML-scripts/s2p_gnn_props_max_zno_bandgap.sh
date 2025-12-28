@@ -17,7 +17,6 @@ python s2p_gnn_props_max.py train \
   --zn-weight 2.0 \
   --loss huber --huber-beta 0.5 \
   --calibrate \
-  --also-train-on-test \
   --ensemble 3 \
   --plot-test \
   --export-test-csv runs/1-band_zno_max/test_preds_vs_true_ensemble.csv

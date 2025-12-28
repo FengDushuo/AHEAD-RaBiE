@@ -18,14 +18,14 @@
 <body>
 	<div class='login'>
 	  <div class='login_title'>
-	    <span>管理员登录</span>
+	    <span>login</span>
 	  </div>
 	  <div class='login_fields'>
 	    <div class='login_fields__user'>
 	      <div class='icon'>
 	        <img alt="" src='../static/img/user_icon_copy.png'>
 	      </div>
-	      <input name="login" placeholder='用户名' maxlength="16" type='text' autocomplete="off"/>
+	      <input name="login" placeholder='username' maxlength="16" type='text' autocomplete="off"/>
 	      <div class='validation'>
 	        <img alt="" src='../static/img/tick.png'>
 	      </div>
@@ -34,7 +34,7 @@
 	      <div class='icon'>
 	        <img alt="" src='../static/img/lock_icon_copy.png'>
 	      </div>
-	      <input name="pwd" placeholder='密码' maxlength="16" type='text' autocomplete="off">
+	      <input name="pwd" placeholder='password' maxlength="16" type='text' autocomplete="off">
 	      <div class='validation'>
 	        <img alt="" src='../static/img/tick.png'>
 	      </div>
@@ -43,21 +43,21 @@
 	      <div class='icon'>
 	        <img alt="" src='../static/img/key.png'>
 	      </div>
-	      <input name="code" placeholder='验证码' maxlength="4" type='text' name="ValidateNum" autocomplete="off">
+	      <input name="code" placeholder='code' maxlength="4" type='text' name="ValidateNum" autocomplete="off">
 	      <div class='validation' style="opacity: 1; right: -5px;top: -3px;">
           <canvas class="J_codeimg" id="myCanvas" onclick="Code();">对不起，您的浏览器不支持canvas，请下载最新版浏览器!</canvas>
 	      </div>
 	    </div>
 	    <div class='login_fields__submit'>
-	      <input id= "login" type='button' value='登录'>
-		  <input id= "register" type='button' value='注册' onclick="window.location.href='/register'">
+	      <input id= "login" type='button' value='login'>
+		  <input id= "register" type='button' value='register' onclick="window.location.href='/register'">
 	    </div>
 	  </div>
 	  <div class='success'>
 	  </div>
 	  <div class='disclaimer'>
-	    <a class="link" href="#none">欢迎登陆后台管理系统</a>
-		<a class="link" href="/forgetpwd">忘记密码</a>
+	    <a class="link" href="#none">welcome</a>
+		<a class="link" href="/forgetpwd">forget</a>
 	  </div>
 	</div>
 	<div class='authent'>
@@ -68,7 +68,7 @@
             <div></div>
         </div>
         </div>
-	  <p>认证中...</p>
+	  <p>loading...</p>
 	</div>
 	<div class="OverWindows"></div>
     <link href="../static/layui/css/layui.css" rel="stylesheet" type="text/css" />
