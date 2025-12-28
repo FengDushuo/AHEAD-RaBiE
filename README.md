@@ -205,6 +205,11 @@ Before proceeding, ensure that:
 -All dependencies are installed
 -The MySQL service is running
 
+Download database from zenodo:
+```bash
+python static/scripts/download_data.py --manifest static/data/manifest.json
+```
+
 ## 8. Running the System
 ### 8.1 Local or Server Execution
 Run the backend service from the project root directory:
