@@ -217,33 +217,40 @@ manifest.json:
 {
     "dataset_name": "AHEAD-RaBiE static/data bundle",
     "dataset_version": "2025-12-28",
-    "zenodo_record_id": "18059887",
+    "zenodo_record_id": "18076202",
     "base_dir_static": "static/data",
     "base_dir_upload": "upload",
     "files": [
       {
         "target": "static",
         "path": "db.zip",
-        "url": "https://zenodo.org/records/18059887/files/db.zip?download=1",
+        "url": "https://zenodo.org/records/18076202/files/db.zip?download=1",
         "sha256": "a80f9f73f6067ecaf17e96f64e8b43b5ad6e25ab2fdae6c86b4121f34a01619c",
         "unpack": "zip"
       },
       {
         "target": "static",
         "path": "history.zip",
-        "url": "https://zenodo.org/records/18059887/files/history.zip?download=1",
+        "url": "https://zenodo.org/records/18076202/files/history.zip?download=1",
         "sha256": "afae34716db77af3862b2a7b8c40564b55204303c2fb28811a569e8a88c3b586",
         "unpack": "zip"
       },
       {
         "target": "static",
         "path": "nanoenzyme-medline-102000-20250706_1751862932.zip",
-        "url": "https://zenodo.org/records/18059887/files/nanoenzyme-medline-102000-20250706_1751862932.zip?download=1",
+        "url": "https://zenodo.org/records/18076202/files/nanoenzyme-medline-102000-20250706_1751862932.zip?download=1",
         "sha256": "144047e585d61725397f81f6f47fd5220fd25ea2bfcc3d77813b6350ede82457",
+        "unpack": "zip"
+      }，
+      {
+        "target": "static",
+        "path": "checkpoint-10000-merged.zip",
+        "url": "https://zenodo.org/records/18076202/files/checkpoint-10000-merged.zip?download=1",
+        "sha256": "0e63e901908a8659371417d705a80c206d455de50711b951d9e8987f88fc5125",
         "unpack": "zip"
       }
     ]
-}
+  }
 ```
 Download database from zenodo:
 ```bash
@@ -253,6 +260,10 @@ Download into static/data/ and decompress.
 
 ## 8. Running the System
 ### 8.1 Local or Server Execution
+Run the LLM：
+```bash
+bash static/data/llm-app-Llama-31-8B-finetune.sh
+```
 Run the backend service from the project root directory:
 ```bash
 python server.py --port 8000
