@@ -210,6 +210,7 @@ The following manifest will download three zip files to static/data/, unzip them
 static/data/db/
 static/data/history/
 static/data/nanoenzyme-medline-102000-20250706_1751862932/
+static/data/checkpoint-10000-merged/
 ```
 manifest.json:
 ```text
