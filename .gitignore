@@ -12,3 +12,26 @@ upload/*.json
 !data/manifest.json
 !data/README.md
 
+
+# large data / model files
+*.pt
+*.pth
+*.ckpt
+*.bin
+*.safetensors
+*.db
+*.sqlite
+*.xlsx
+*.xls
+*.csv
+*.zip
+*.7z
+*.tar
+*.tar.gz
+*.rar
+
+# cache
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.DS_Store

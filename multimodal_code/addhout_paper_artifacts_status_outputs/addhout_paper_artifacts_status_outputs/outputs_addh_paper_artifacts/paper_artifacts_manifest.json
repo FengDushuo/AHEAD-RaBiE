@@ -1,0 +1,13 @@
+{
+  "script": "38_make_addhout_paper_tables_figures.py",
+  "holdout_dir": "/data/home/terminator/RL/multi-view/runs_addh_server/addh_full_deepseek_v4pro_gpu3_20260617_0034/outputs_addh_fewshot_holdout_validation",
+  "sensitivity_dir": "/data/home/terminator/RL/multi-view/runs_addh_server/addh_full_deepseek_v4pro_gpu3_20260617_0034/outputs_addh_calibration_fraction_sensitivity",
+  "pred_csv": "/data/home/terminator/RL/multi-view/runs_addh_server/addh_full_deepseek_v4pro_gpu3_20260617_0034/outputs_addh_bidirectional_chemistry_prior/bidirectional_chemistry_addhout_predictions.csv",
+  "labels_csv": "/data/home/terminator/RL/multi-view/runs_addh_server/addh_full_deepseek_v4pro_gpu3_20260617_0034/outputs_addh_llm_element_priors/addhout_audit_labels.csv",
+  "paper_claim": "main result should use held-out few-shot validation; full-data bidirectional result is post-hoc reference",
+  "outputs": {
+    "main_results_csv": "/data/home/terminator/RL/multi-view/runs_addh_server/addh_full_deepseek_v4pro_gpu3_20260617_0034/outputs_addh_paper_artifacts/tables/addhout_main_results.csv",
+    "main_results_md": "/data/home/terminator/RL/multi-view/runs_addh_server/addh_full_deepseek_v4pro_gpu3_20260617_0034/outputs_addh_paper_artifacts/tables/addhout_main_results.md",
+    "figures": "/data/home/terminator/RL/multi-view/runs_addh_server/addh_full_deepseek_v4pro_gpu3_20260617_0034/outputs_addh_paper_artifacts/figures"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "script": "36_validate_addhout_fewshot_holdout.py",
+  "pred_csv": "/data/home/terminator/RL/multi-view/runs_addh_server/addh_full_deepseek_v4pro_gpu3_20260617_0034/outputs_addh_bidirectional_chemistry_prior/bidirectional_chemistry_addhout_predictions.csv",
+  "labels_csv": "/data/home/terminator/RL/multi-view/runs_addh_server/addh_full_deepseek_v4pro_gpu3_20260617_0034/outputs_addh_llm_element_priors/addhout_audit_labels.csv",
+  "anchor_col": "pred_chem_spike_final",
+  "compare_cols": [
+    "pred_superblend_final"
+  ],
+  "full_data_reference_cols": [
+    "pred_bidir_chem_final",
+    "pred_bidir_chem_conservative"
+  ],
+  "n_labeled_rows": 39,
+  "n_repeats": 500,
+  "test_frac": 0.35,
+  "seed": 42,
+  "validation_claim": "internal target-domain few-shot repeated holdout, not external validation",
+  "labels_used_for_fewshot_calibration": true,
+  "test_labels_used_for_training": false,
+  "paper_note": "Use this as a target-domain calibrated validation result. Do not call it strict blind external validation."
+}

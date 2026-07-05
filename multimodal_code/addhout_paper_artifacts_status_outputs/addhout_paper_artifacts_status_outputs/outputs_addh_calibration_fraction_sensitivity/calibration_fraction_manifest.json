@@ -1,0 +1,28 @@
+{
+  "script": "37_calibration_fraction_sensitivity_addhout.py",
+  "dependency": "36_validate_addhout_fewshot_holdout.py",
+  "pred_csv": "/data/home/terminator/RL/multi-view/runs_addh_server/addh_full_deepseek_v4pro_gpu3_20260617_0034/outputs_addh_bidirectional_chemistry_prior/bidirectional_chemistry_addhout_predictions.csv",
+  "labels_csv": "/data/home/terminator/RL/multi-view/runs_addh_server/addh_full_deepseek_v4pro_gpu3_20260617_0034/outputs_addh_llm_element_priors/addhout_audit_labels.csv",
+  "anchor_col": "pred_chem_spike_final",
+  "compare_cols": [
+    "pred_superblend_final"
+  ],
+  "full_data_reference_cols": [
+    "pred_bidir_chem_final",
+    "pred_bidir_chem_conservative"
+  ],
+  "calibration_fractions": [
+    0.1,
+    0.2,
+    0.3,
+    0.5,
+    0.65,
+    0.7,
+    0.8
+  ],
+  "n_labeled_rows": 39,
+  "n_repeats_per_fraction": 500,
+  "seed": 42,
+  "validation_claim": "calibration-size sensitivity for internal target-domain few-shot holdout",
+  "test_labels_used_for_training": false
+}

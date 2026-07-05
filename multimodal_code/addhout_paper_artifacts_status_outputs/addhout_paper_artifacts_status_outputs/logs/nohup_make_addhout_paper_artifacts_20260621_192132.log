@@ -1,0 +1,21 @@
+nohup: ignoring input
+[INFO] ROOT=/data/home/terminator/RL/multi-view
+[INFO] RUN_ROOT=/data/home/terminator/RL/multi-view/runs_addh_server/addh_full_deepseek_v4pro_gpu3_20260617_0034
+[INFO] PY_MM=/data/home/terminator/anaconda3/envs/multiview/bin/python
+[INFO] HOLDOUT_DIR=/data/home/terminator/RL/multi-view/runs_addh_server/addh_full_deepseek_v4pro_gpu3_20260617_0034/outputs_addh_fewshot_holdout_validation
+[INFO] SENSITIVITY_DIR=/data/home/terminator/RL/multi-view/runs_addh_server/addh_full_deepseek_v4pro_gpu3_20260617_0034/outputs_addh_calibration_fraction_sensitivity
+[INFO] PRED_CSV=/data/home/terminator/RL/multi-view/runs_addh_server/addh_full_deepseek_v4pro_gpu3_20260617_0034/outputs_addh_bidirectional_chemistry_prior/bidirectional_chemistry_addhout_predictions.csv
+[INFO] LABELS_CSV=/data/home/terminator/RL/multi-view/runs_addh_server/addh_full_deepseek_v4pro_gpu3_20260617_0034/outputs_addh_llm_element_priors/addhout_audit_labels.csv
+[INFO] OUT_DIR=/data/home/terminator/RL/multi-view/runs_addh_server/addh_full_deepseek_v4pro_gpu3_20260617_0034/outputs_addh_paper_artifacts
+[OK] wrote /data/home/terminator/RL/multi-view/runs_addh_server/addh_full_deepseek_v4pro_gpu3_20260617_0034/outputs_addh_paper_artifacts
+                             method                              claim  available  n_splits  mae_mean  mae_std  mae_median  mae_q05  mae_q95  rmse_mean  rmse_std  pearson_mean  pearson_std  spearman_mean  spearman_std
+                  Strict superblend                  held-out baseline       True       500  1.666681 0.350446    1.665537 1.087660 2.275501   2.212751  0.490434      0.531216     0.179653       0.546391      0.176190
+              Chemistry-spike prior                  held-out baseline       True       500  0.794709 0.138598    0.801748 0.571586 1.020663   0.989123  0.141015      0.917254     0.038355       0.886497      0.056948
+Few-shot calibrated chemistry prior               main held-out result       True       500  0.387723 0.087436    0.375283 0.270754 0.548068   0.491561  0.112003      0.981460     0.011163       0.967279      0.025381
+Few-shot calibrated chemistry prior               leave-one-dopant-out       True        20  0.390246 0.236419    0.312785 0.109156 0.826116   0.426831  0.237677           NaN          NaN            NaN           NaN
+      Bidirectional chemistry prior  full-data reference, not held-out       True         1  0.385992      NaN    0.385992      NaN      NaN   0.435773       NaN      0.989377          NaN       0.985830           NaN
+      Bidirectional chemistry prior post-hoc upper bound, not held-out       True         1  0.215626      NaN    0.215626      NaN      NaN   0.239618       NaN      0.997511          NaN       0.996154           NaN
+[DONE] Paper artifacts:
+  /data/home/terminator/RL/multi-view/runs_addh_server/addh_full_deepseek_v4pro_gpu3_20260617_0034/outputs_addh_paper_artifacts/tables/addhout_main_results.csv
+  /data/home/terminator/RL/multi-view/runs_addh_server/addh_full_deepseek_v4pro_gpu3_20260617_0034/outputs_addh_paper_artifacts/tables/addhout_main_results.md
+  /data/home/terminator/RL/multi-view/runs_addh_server/addh_full_deepseek_v4pro_gpu3_20260617_0034/outputs_addh_paper_artifacts/figures/
