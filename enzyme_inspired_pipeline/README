@@ -1,4 +1,4 @@
-export SCNET_API_KEY="sk-ODU5LTExMTUxMTE4MTkzLTE3ODA1NTc2MjA4OTI="
+export SCNET_API_KEY=""
 export MODEL_ID="DeepSeek-V4-Flash"
 export FORCE_PARSE=1
 export FORCE_EXTRACT=1
