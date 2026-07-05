@@ -35,3 +35,35 @@ __pycache__/
 *.pyc
 .ipynb_checkpoints/
 .DS_Store
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# generated outputs
+enzyme_inspired_pipeline/outputs*/
+multimodal_code/outputs*/
+multimodal_code/addhout_paper_artifacts_status_outputs/
+
+# local logs
+*.log
+nohup.out
+
+# model/data artifacts
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.bin
+*.db
+*.sqlite
+*.zip
+*.7z
+*.tar
+*.tar.gz
+*.rar
+
+# system files
+.DS_Store
+Thumbs.db
