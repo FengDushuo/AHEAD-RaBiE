@@ -36,6 +36,20 @@ AHEAD-RaBiE adopts a **backend–frontend separation architecture**:
 
 ---
 
+### Additional Research Modules
+
+This repository also includes two research-oriented computational modules:
+
+- `enzyme_inspired_pipeline/`  
+  A literature- and LLM-assisted pipeline for extracting enzyme-inspired catalytic mechanisms, hydrogen adsorption/deprotonation descriptors, atom-resolved site features, and normalized catalytic descriptor databases.
+
+- `multimodal_code/`  
+  A multimodal machine-learning workflow for addH to addH-out prediction, integrating structural features, graph embeddings, model ensembling, calibration, few-shot validation, and final candidate ranking.
+
+These modules are provided as reproducible research code. Generated outputs, large datasets, trained checkpoints, and intermediate prediction files should be stored externally, such as Zenodo, rather than committed directly to GitHub.
+
+---
+
 ## 3. Hardware Requirements
 
 ### Minimum
@@ -205,7 +219,7 @@ Before proceeding, ensure that:
 -All dependencies are installed
 -The MySQL service is running
 
-The following manifest will download three zip files to static/data/, unzip them, and automatically restore them to:
+The following manifest downloads four zip files to `static/data/`, unpacks them, and restores the required database, history, literature data, and merged LLM checkpoint directories:
 ```text
 static/data/db/
 static/data/history/
